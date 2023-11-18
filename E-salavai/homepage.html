@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-SALAVAI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            margin: 2em 0;
+        }
+
+        .options img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Style for the login button */
+        .login-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-SALAVAI</h1>
+        <p>Tamilnadu Culture at Your Doorstep</p>
+
+        <!-- Login Button with a unique ID for JavaScript targeting -->
+        <a href="#" class="login-button" id="loginButton">Login</a>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">E-Laundry</a>
+        <a href="#">Cultural Package</a>
+        <a href="#">Our Products</a>
+    </nav>
+
+    <section>
+        <h2>Welcome to E-SALAVAI!</h2>
+        <p>Experience the elite Tamilnadu culture with our exclusive services.</p>
+
+        <div class="options">
+            <div>
+                <img src="webb.jpg" alt="E-Laundry">
+                <h3>E-Laundry</h3>
+                <p>Discover our high-quality laundry services.</p>
+            </div>
+            
+            <div>
+                <img src="cul.jpg" alt="Cultural Package">
+                <h3>Cultural Package</h3>
+                <p>Immerse yourself in the rich heritage of Tamilnadu.</p>
+            </div>
+            
+            <div>
+                <img src="our_products.jpg" alt="Our Products">
+                <h3>Our Products</h3>
+                <p>Explore and shop our curated collection of Tamilnadu-inspired products.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        var loginButton = document.getElementById('loginButton');
+
+        // Add a click event listener to the login button
+        loginButton.addEventListener('click', function() {
+            // Redirect to the login.html page
+            window.location.href = 'login.html';
+        });
+    </script>
+    <footer>
+        <p>Contact us: Phone - 9790023405 | Email - <a href="mailto:esalavaicare@gmail.com">esalavaicare@gmail.com</a></p>
+    </footer>
+</body>
+</html>
+
